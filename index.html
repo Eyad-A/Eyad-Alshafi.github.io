@@ -1,0 +1,30 @@
+<html>
+  <head>
+  	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  	<link rel="stylesheet" type="text/css" href="css/weather-icons.css">
+  	<link rel="stylesheet" type="text/css" href="css/weather-icons-wind.css">
+  	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  	
+  </head>
+  <body>
+
+  <div class="content">
+    <p><h2>Your local weather for<br><span id="city"></span>, <span id="country"></span></h2></p>
+    <p><h2><span id="date"></span></h2></p>
+    <p><h2><span id="time"></span></h2></p>
+    <hr>
+    <p><h1><span id="temp"></span><span id="unit" class="unit"></span></h1></p>
+    <p><i class="fa fa-arrow-up fa-lg red" aria-hidden="true"></i><span id="high"></span><span class="unit"></span>&nbsp; &nbsp; &nbsp;
+       <i class="fa fa-arrow-down fa-lg blue" aria-hidden="true"></i><span id="low"></span><span class="unit"></span></p>
+    
+    <p><button id="switch">F/C</button>
+    <p><h3><span id="desc">Description</span></h3></p>
+    <hr>
+    <p><h3><i class="wi wi-humidity icon-size"></i> <span id="hum"> </span>% &nbsp; &nbsp; &nbsp;<i class="wi wi-strong-wind icon-size"></i> <span id="wind"> </span><span id="speed">mph</span></h3></p>
+    <p><h3><i class="wi wi-sunrise icon-size"></i> <span id="sunrise"></span> &nbsp; &nbsp; &nbsp;<i class="wi wi-sunset icon-size"></i> <span id="sunset"></span></h3></p>
+  </div>
+  
+  <script src="weather.js"></script>
+  </body>
+</html>
