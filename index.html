@@ -2,7 +2,8 @@
   <head>
   	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
   	<link rel="stylesheet" type="text/css" href="css/weather-icons.css">
-  	<link rel="stylesheet" type="text/css" href="css/weather-icons-wind.css">
+    <link rel="stylesheet" type="text/css" href="css/weather-icons-wind.css">
+  	<link rel="stylesheet" type="text/css" href="css/animated/cloudy.svg">
   	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   	<link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  	
@@ -20,7 +21,7 @@
        <i class="fa fa-arrow-down fa-2x blue" aria-hidden="true"></i><span id="low"></span><span id ="lowUnit" class="unit"></span></p>
     
     <p><button id="switch">F/C</button>
-    <p><span id="desc">Description</span></p>
+    <div><span id="desc">Description</span><img id="animate"></div>
     <hr>
     <p><i class="wi wi-humidity icon-size"></i> <span id="hum"> </span> &nbsp; &nbsp; &nbsp;<i class="wi wi-strong-wind icon-size"></i> <span id="wind"> </span><span id="speed">mph</span></p>
     <p><i class="wi wi-sunrise icon-size"></i> <span id="sunrise"></span> &nbsp; &nbsp; &nbsp;<i class="wi wi-sunset icon-size"></i> <span id="sunset"></span></p>    

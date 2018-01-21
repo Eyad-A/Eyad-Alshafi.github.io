@@ -96,54 +96,70 @@ function changeBackground(desc) {
     switch (desc) {
       case "clear":
         $("body").css("background-image", 'url("img/clear-day.jpeg")');
+        $("#animate").attr("src", "css/animated/day.svg");
         break;
       case "clouds":
         $("body").css("background-image", 'url("img/cloudy-day.jpeg")');
+        $("#animate").attr("src", "css/animated/cloudy-day-3.svg");
         break;
       case "rain":
         $("body").css("background-image", 'url("img/rainy-day.jpeg")');
+        $("#animate").attr("src", "css/animated/rainy-3.svg");
         break;
       case "thunderstorm":
         $("body").css("background-image", 'url("img/thunder-day.jpeg")');
+        $("#animate").attr("src", "css/animated/thunder.svg");
         break;
       case "snow":
         $("body").css("background-image", 'url("img/snow-day.jpeg")');
+        $("#animate").attr("src", "css/animated/snowy-3.svg");
         break;
       case "fog":
         $("body").css("background-image", 'url("img/fog-day.jpeg")');
+        $("#animate").attr("src", "css/animated/cloudy.svg");
         break;
       case "mist":
         $("body").css("background-image", 'url("img/fog-day.jpg")');
+        $("#animate").attr("src", "css/animated/cloudy.svg");
         break;
       default:
         $("body").css("background-image", 'url("img/clear-day.jpeg")');
+        $("#animate").attr("src", "css/animated/day.svg");
     }
 } else {  
       var desc = desc.toLowerCase();
     switch (desc) {
       case "clear":
         $("body").css("background-image", 'url("img/clear-night.jpeg")');
+        $("#animate").attr("src", "css/animated/night.svg");
         break;
       case "clouds":
         $("body").css("background-image", 'url("img/cloudy-night.jpeg")');
+        $("#animate").attr("src", "css/animated/cloudy-night-3.svg");
         break;
       case "rain":
         $("body").css("background-image", 'url("img/rainy-night.jpeg")');
+        $("#animate").attr("src", "css/animated/rainy-6.svg");
         break;
       case "thunderstorm":
         $("body").css("background-image", 'url("img/thunder-night.jpeg")');
+        $("#animate").attr("src", "css/animated/thunder.svg");
         break;
       case "snow":
         $("body").css("background-image", 'url("img/snow-night.jpeg")');
+        $("#animate").attr("src", "css/animated/snowy-6.svg");
         break;
       case "fog":
         $("body").css("background-image", 'url("img/fog-night.jpeg")');
+        $("#animate").attr("src", "css/animated/cloudy.svg");
         break;
       case "mist":
         $("body").css("background-image", 'url("img/fog-night.jpg")');
+        $("#animate").attr("src", "css/animated/cloudy.svg");
         break;
       default:
         $("body").css("background-image", 'url("img/clear-night.jpeg")');
+        $("#animate").attr("src", "css/animated/day.svg");
 }
 }
 }

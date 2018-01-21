@@ -71,6 +71,11 @@ hr {
 	font-weight: bold;
 }
 
+img {
+	margin-bottom: -22px;
+	
+}
+
 
 #switch {
 	-webkit-border-radius: 20;
