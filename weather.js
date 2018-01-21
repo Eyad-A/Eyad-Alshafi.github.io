@@ -95,15 +95,15 @@ function changeBackground(desc) {
     var desc = desc.toLowerCase();
     switch (desc) {
       case "clear":
-        $("body").css("background-image", 'url("img/clear-day.jpeg")');
+        $("body").css("background-image", 'url("img/clear-day.jpg")');
         $("#animate").attr("src", "css/animated/day.svg");
         break;
       case "clouds":
-        $("body").css("background-image", 'url("img/cloudy-day.jpeg")');
+        $("body").css("background-image", 'url("img/cloudy-day.jpg")');
         $("#animate").attr("src", "css/animated/cloudy-day-3.svg");
         break;
       case "rain":
-        $("body").css("background-image", 'url("img/rainy-day.jpeg")');
+        $("body").css("background-image", 'url("img/rainy-day.jpg")');
         $("#animate").attr("src", "css/animated/rainy-3.svg");
         break;
       case "thunderstorm":
@@ -111,11 +111,11 @@ function changeBackground(desc) {
         $("#animate").attr("src", "css/animated/thunder.svg");
         break;
       case "snow":
-        $("body").css("background-image", 'url("img/snow-day.jpeg")');
+        $("body").css("background-image", 'url("img/snow-day.jpg")');
         $("#animate").attr("src", "css/animated/snowy-3.svg");
         break;
       case "fog":
-        $("body").css("background-image", 'url("img/fog-day.jpeg")');
+        $("body").css("background-image", 'url("img/fog-day.jpg")');
         $("#animate").attr("src", "css/animated/cloudy.svg");
         break;
       case "mist":
@@ -123,14 +123,14 @@ function changeBackground(desc) {
         $("#animate").attr("src", "css/animated/cloudy.svg");
         break;
       default:
-        $("body").css("background-image", 'url("img/clear-day.jpeg")');
+        $("body").css("background-image", 'url("img/clear-day.jpg")');
         $("#animate").attr("src", "css/animated/day.svg");
     }
 } else {  
       var desc = desc.toLowerCase();
     switch (desc) {
       case "clear":
-        $("body").css("background-image", 'url("img/clear-night.jpeg")');
+        $("body").css("background-image", 'url("img/clear-night.jpg")');
         $("#animate").attr("src", "css/animated/night.svg");
         break;
       case "clouds":
@@ -138,15 +138,15 @@ function changeBackground(desc) {
         $("#animate").attr("src", "css/animated/cloudy-night-3.svg");
         break;
       case "rain":
-        $("body").css("background-image", 'url("img/rainy-night.jpeg")');
+        $("body").css("background-image", 'url("img/rainy-night.jpg")');
         $("#animate").attr("src", "css/animated/rainy-6.svg");
         break;
       case "thunderstorm":
-        $("body").css("background-image", 'url("img/thunder-night.jpeg")');
+        $("body").css("background-image", 'url("img/thunder-night.jpg")');
         $("#animate").attr("src", "css/animated/thunder.svg");
         break;
       case "snow":
-        $("body").css("background-image", 'url("img/snow-night.jpeg")');
+        $("body").css("background-image", 'url("img/snow-night.jpg")');
         $("#animate").attr("src", "css/animated/snowy-6.svg");
         break;
       case "fog":
@@ -158,8 +158,8 @@ function changeBackground(desc) {
         $("#animate").attr("src", "css/animated/cloudy.svg");
         break;
       default:
-        $("body").css("background-image", 'url("img/clear-night.jpeg")');
-        $("#animate").attr("src", "css/animated/day.svg");
+        $("body").css("background-image", 'url("img/clear-night.jpg")');
+        $("#animate").attr("src", "css/animated/night.svg");
 }
 }
 }

@@ -1,5 +1,5 @@
 body {
-	background-image: url(img/clear-day.jpeg);
+	background-image: url(img/clear-day.jpg);
 	background: no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -30,7 +30,7 @@ body {
 	padding: 5px;
 	border: 1px solid #8c8c8c;
 	border-radius: 25px;
-	opacity: 0.7;
+	opacity: 0.8;
 	text-align: center;
 	color: #4d4d4d;
 }
@@ -43,6 +43,7 @@ body {
 hr {
 	border-width: 2px;
 	display: block;
+	width: 80%;
 }
 
 #date,
