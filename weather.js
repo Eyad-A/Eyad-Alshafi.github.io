@@ -36,7 +36,7 @@ $(document).ready(function() {
       $("#low").text(minInC + String.fromCharCode(176));
       $("#high").text(maxInC + String.fromCharCode(176));
       $("#wind").text(windInK);
-      $("#speed").text("kph");
+      $("#speed").text("km/h");
     }
   });
 })
@@ -48,20 +48,20 @@ function getWeather(lat, lon) {
     url: urlString, success: function(result) {
       $("#city").text(result.name);
       $("#country").text(result.sys.country);
-      currentInC = Math.round(result.main.temp * 10) / 10;
+      currentInC = Math.round(result.main.temp);
       currentInF = Math.round(result.main.temp * 9 / 5 + 32);
-      minInC = Math.round(result.main.temp_min * 10) / 10;
+      minInC = Math.round(result.main.temp_min);
       minInF = Math.round(result.main.temp_min * 9 / 5 + 32);
-      maxInC = Math.round(result.main.temp_max * 10) / 10;
+      maxInC = Math.round(result.main.temp_max);
       maxInF = Math.round(result.main.temp_max * 9 / 5 + 32);
-      windInK = Math.round(result.wind.speed * 10) / 10;
+      windInK = Math.round(result.wind.speed);
       windInM = Math.round(result.wind.speed * 0.62);
       $("#temp").text(currentInF + String.fromCharCode(176));
       $("#low").text(minInF + String.fromCharCode(176));
       $("#high").text(maxInF + String.fromCharCode(176));
       $(".unit").text(unit);
       $("#desc").text(result.weather[0].main);
-      $("#hum").text(result.main.humidity);
+      $("#hum").text(result.main.humidity + "%");
       //$("#wind").text(result.wind.speed);
       $("#wind").text(windInM);
       var unixSunrise = result.sys.sunrise;

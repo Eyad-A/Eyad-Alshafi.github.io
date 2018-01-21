@@ -9,6 +9,19 @@ body {
 	font-size: 12px;
 }
 
+.intro {
+	margin-top: 3%;
+	font-weight: bold; 
+	font-size: 3.4em;
+	letter-spacing: 1px;
+	text-align: center;
+	color: #b3b3b3;
+
+  	text-shadow: 2px 2px 1px black, 0 0 3px black, 0 0 4px black,
+    0 0 5px black, 0 0 6px black, 0 0 7px black, 0 0 8px black,
+    0 0 9px black, 0 0 10px black;
+}
+
 .content {
 	background-color: #e6e6e6;
 	margin: 0 auto;
@@ -40,14 +53,18 @@ hr {
 	font-weight: bold;
 }
 
-#temp {
+#temp,
+#unit {
 	font-size: 4em;
 	font-weight: bold;
 }
 
 #high,
 #low,
+#highUnit,
+#lowUnit,
 #desc,
+#speed,
 #sunrise,
 #sunset {
 	font-size: 2em;
