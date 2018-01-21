@@ -21,15 +21,11 @@ $(document).ready(function() {
     var currentUnit = $('#unit').text();
     var newUnit = currentUnit == "F" ? "C" : "F";
     $('.unit').text(newUnit);
-    if (newUnit == "F") {
-      var fahTemp = Math.round(parseInt($("#temp").text()) * 9 / 5 + 32);
-      $("#temp").text(fahTemp + String.fromCharCode(176));
-      var fahMinTemp = Math.round(parseInt($("#low").text()) * 9 / 5 + 32);
-      $("#low").text(fahMinTemp + String.fromCharCode(176));
-      var fahMaxTemp = Math.round(parseInt($("#high").text()) * 9 / 5 + 32);
-      $("#high").text(fahMaxTemp + String.fromCharCode(176));
-      var miles = Math.round(parseInt($("#wind").text()) * 0.62);
-      $("#wind").text(miles);
+    if (newUnit == "F") {      
+      $("#temp").text(currentInF + String.fromCharCode(176));      
+      $("#low").text(minInF + String.fromCharCode(176));      
+      $("#high").text(maxInF + String.fromCharCode(176));      
+      $("#wind").text(windInM);
       $("#speed").text("mph");
     } else {
       $("#temp").text(currentInC + String.fromCharCode(176));
@@ -61,8 +57,7 @@ function getWeather(lat, lon) {
       $("#high").text(maxInF + String.fromCharCode(176));
       $(".unit").text(unit);
       $("#desc").text(result.weather[0].main);
-      $("#hum").text(result.main.humidity + "%");
-      //$("#wind").text(result.wind.speed);
+      $("#hum").text(result.main.humidity + "%");      
       $("#wind").text(windInM);
       var unixSunrise = result.sys.sunrise;
       sunrise = new Date(unixSunrise*1000);
