@@ -145,7 +145,7 @@ function changeBackground(desc) {
         $("#animate").attr("src", "css/animated/snowy-6.svg");
         break;
       case "fog":
-        $("body").css("background-image", 'url("img/fog-night.jpeg")');
+        $("body").css("background-image", 'url("img/fog-night.jpg")');
         $("#animate").attr("src", "css/animated/cloudy.svg");
         break;
       case "mist":
