@@ -95,7 +95,7 @@ function changeBackground(desc) {
         break;
       case "clouds":
         $("body").css("background-image", 'url("img/cloudy-day.jpg")');
-        $("#animate").attr("src", "css/animated/cloudy-day-3.svg");
+        $("#animate").attr("src", "css/animated/cloudy.svg");
         break;
       case "rain":
         $("body").css("background-image", 'url("img/rainy-day.jpg")');
