@@ -116,6 +116,9 @@ function changeBackground(desc) {
       case "mist":
         $("body").css("background-image", 'url("img/fog-day.jpg")');
         $("#animate").attr("src", "css/animated/cloudy.svg");
+      case "haze":
+        $("body").css("background-image", 'url("img/fog-day.jpg")');
+        $("#animate").attr("src", "css/animated/cloudy.svg");
         break;
       default:
         $("body").css("background-image", 'url("img/clear-day.jpg")');
@@ -149,6 +152,9 @@ function changeBackground(desc) {
         $("#animate").attr("src", "css/animated/cloudy.svg");
         break;
       case "mist":
+        $("body").css("background-image", 'url("img/fog-night.jpg")');
+        $("#animate").attr("src", "css/animated/cloudy.svg");
+      case "haze":
         $("body").css("background-image", 'url("img/fog-night.jpg")');
         $("#animate").attr("src", "css/animated/cloudy.svg");
         break;
